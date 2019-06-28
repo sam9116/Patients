@@ -1,0 +1,31 @@
+
+
+  <div class="container">
+    <h1>Edit Patient Information</h1>
+    <form #patientForm="ngForm">
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input type="text" class="form-control" name="FirstName" [(ngModel)]="FirstName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Last Name</label>
+        <input type="text" class="form-control" name="LastName" [(ngModel)]="LastName" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Date of Birth</label>
+        <input type="date" class="form-control" name="DateOfBirth" [(ngModel)]="DateOfBirth" required />
+      </div>
+
+
+
+
+    </form>
+
+    <button (click)="close()">Close</button>
+    <button (click)="save()">Save</button>
+  </div>
+
+
+
+

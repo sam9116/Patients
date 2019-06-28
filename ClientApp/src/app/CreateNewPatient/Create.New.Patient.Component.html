@@ -1,0 +1,28 @@
+
+
+  <div class="container">
+    <h1>Patient Creation</h1>
+
+
+    <form (ngSubmit)="onSubmit()" #patientForm="ngForm"> 
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input type="text" class="form-control" name="FirstName" [(ngModel)]="model.FirstName" [ngModelOptions]="{standalone: true}" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input type="text" class="form-control"  name="LastName" [(ngModel)]="model.LastName" [ngModelOptions]="{standalone: true}" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Date of Birth</label>
+        <input type="date" class="form-control"  name="DateOfBirth" [(ngModel)]="model.DateOfBirth" [ngModelOptions]="{standalone: true}" required />
+      </div>
+
+
+      <button type="submit"  class="btn btn-success">Submit</button>
+
+    </form>
+  </div>
+
+
